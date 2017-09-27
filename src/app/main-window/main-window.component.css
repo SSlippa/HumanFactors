@@ -1,0 +1,13 @@
+.main {
+  background-color: #f6f7fb;
+  /*display: flex;*/
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,83 @@
+.site-header {
+  color: white;
+  display: flex;
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  border: 1px solid black;
+}
+
+button:before {
+  content: attr(data-count);
+}
+
+.badge-top-right:before {
+  left: auto;
+  right: -7px;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  /*background-image: url('searchicon.png');*/
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+  width: 100%;
+}
+
+.hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 96px;
+  height: 96px;
+  font-size: 0;
+  text-indent: -9999px;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  border: 0;
+}
+
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 30px;
+  right: 30px;
+  height: 5px;
+  background: #1a2580;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #1a2580;
+  content: "";
+}
+
+.hamburger span::before {
+  top: -10px;
+}
+
+.hamburger span::after {
+  bottom: -10px;
+}

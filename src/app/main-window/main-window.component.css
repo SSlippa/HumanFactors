@@ -7,7 +7,40 @@
   border: 1px solid black;
 }
 
-.flex {
+.first-line {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  /*height: 300px;*/
+  background-color: lightskyblue;
+  justify-content: space-around;
+}
+
+.flex-element {
+  padding: 15px;
+  margin: 25px;
+  border-radius: 5px;
+  flex-grow: 1;
+  background-color: firebrick;
+  height: 200px;
+}
+
+.element1 {
+  max-width: 300px;
+}
+
+.element2 {
+  max-width: 700px;
+}
+
+.second-line {
+  display: flex;
+  flex-wrap: wrap;
+  /*height: 300px;*/
+  background-color: lightskyblue;
+  justify-content: space-around;
+}
+
+.element3, .element4, .element5 {
+  max-width: 250px;
+  height: 300px;
 }

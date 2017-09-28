@@ -10,8 +10,9 @@
 .first-line {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
   /*height: 300px;*/
-  background-color: lightskyblue;
+  background-color: #f6f7fb;
   justify-content: space-around;
 }
 
@@ -21,26 +22,27 @@
   border-radius: 5px;
   flex-grow: 1;
   background-color: firebrick;
-  height: 200px;
+  height: 250px;
 }
 
 .element1 {
-  max-width: 300px;
+  min-width: 300px;
 }
 
 .element2 {
-  max-width: 700px;
+  min-width: 480px;
 }
 
 .second-line {
   display: flex;
   flex-wrap: wrap;
+  margin: auto;
   /*height: 300px;*/
-  background-color: lightskyblue;
+  background-color: #f6f7fb;
   justify-content: space-around;
 }
 
 .element3, .element4, .element5 {
-  max-width: 250px;
-  height: 300px;
+  min-width: 240px;
+  min-height: 340px;
 }

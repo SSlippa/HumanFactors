@@ -13,6 +13,7 @@ import { ReportComponent } from './main-window/report/report.component';
 import { TasksComponent } from './main-window/tasks/tasks.component';
 import { MessagesComponent } from './main-window/messages/messages.component';
 import { ActivityComponent } from './main-window/activity/activity.component';
+import {DataServiceService} from "./data-service.service";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import { ActivityComponent } from './main-window/activity/activity.component';
     HttpModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [DataServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

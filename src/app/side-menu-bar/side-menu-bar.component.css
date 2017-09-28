@@ -10,12 +10,13 @@ ul {
 :host {
   background: #0e1935;
   color: #fff;
-  position: fixed;
+  position: absolute;
+  float: left;
   left: 0;
   top: 0;
   right: auto;
   bottom: 0;
-  width: 10%;
+  /*width: 10%;*/
   min-width: 200px;
   z-index: 9999;
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;

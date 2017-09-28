@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output} from '@angular/core';
+import {DataServiceService} from '../data-service.service';
 
 @Component({
   selector: 'app-header',
@@ -7,12 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   menuState: string;
-  constructor() { }
+  size;
+  constructor(private service: DataServiceService) { }
 
   ngOnInit() {
   }
 
   toggleMenu() {
     this.menuState = this.menuState === 'out' ? 'in' : 'out';
+    this.service.menuStatus.next(this.menuState);
+    if (this.menuState === 'in') {
+      this.size = '0px';
+    } else {
+      this.size = '200px';
+    }
   }
+
 }

@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import { trigger, state, style, transition, animate} from '@angular/animations';
+import {DataServiceService} from './data-service.service';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,15 @@ import { trigger, state, style, transition, animate} from '@angular/animations';
   ]
 })
 export class AppComponent {
-  menuState:string = 'out';
+   menuState:string = 'in';
+
+   constructor(private service: DataServiceService) {
+     service.menuStatus.subscribe(
+       (status: string) => {
+         this.menuState = status;
+       }
+     );
+   }
 
   // toggleMenu() {
   //   this.menuState = this.menuState === 'out' ? 'in' : 'out';

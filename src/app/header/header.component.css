@@ -1,15 +1,13 @@
 .site-header {
   color: white;
   display: flex;
-  margin: auto;
-  width: 80%;
+  /*margin: auto;*/
+  /*width: 100%;*/
   align-items: center;
   border: 1px solid black;
+  height: 60px;
 }
 
-button:before {
-  content: attr(data-count);
-}
 
 .badge-top-right:before {
   left: auto;

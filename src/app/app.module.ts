@@ -18,6 +18,7 @@ import { SingleTaskComponent } from './main-window/tasks/single-task/single-task
 import { MinusOffPipe } from './minus-off.pipe';
 import { MessageComponent } from './main-window/messages/message/message.component';
 import { ShortenPipe } from './shorten.pipe';
+import { SingleActivityComponent } from './main-window/activity/single-activity/single-activity.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ShortenPipe } from './shorten.pipe';
     SingleTaskComponent,
     MinusOffPipe,
     MessageComponent,
-    ShortenPipe
+    ShortenPipe,
+    SingleActivityComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@
   align-items: center;
   border: 1px solid black;
   height: 60px;
+  transition: margin 0.4s ease-in-out;
 }
 
 

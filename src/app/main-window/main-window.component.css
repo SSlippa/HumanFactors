@@ -1,10 +1,12 @@
 .main {
   background-color: #f6f7fb;
   /*display: flex;*/
-  margin: auto;
+  /*margin: auto;*/
   /*width: 80%;*/
   align-items: center;
   border: 1px solid black;
+  transition: margin 0.4s ease-in-out;
+
 }
 
 .first-line {
@@ -14,11 +16,13 @@
   /*height: 300px;*/
   background-color: #f6f7fb;
   justify-content: space-around;
+  margin-bottom: 25px;
 }
 
 .flex-element {
   padding: 15px;
-  margin: 25px;
+  margin-left: 25px;
+  margin-bottom: 10px;
   border-radius: 5px;
   flex-grow: 1;
   background-color: firebrick;
@@ -31,6 +35,7 @@
 
 .element2 {
   min-width: 480px;
+  flex-grow: 2;
 }
 
 .second-line {

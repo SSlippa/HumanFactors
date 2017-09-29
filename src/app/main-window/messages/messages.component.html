@@ -1,4 +1,11 @@
 <div>
   <h4>Messages</h4>
   <hr>
+  <div class="row">
+    <div class="col-xs-12">
+      <app-message
+        [message]="messageEL"
+        *ngFor="let messageEL of messages; let i = index"></app-message>
+    </div>
+  </div>
 </div>

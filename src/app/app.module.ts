@@ -17,6 +17,7 @@ import {DataServiceService} from './data-service.service';
 import { SingleTaskComponent } from './main-window/tasks/single-task/single-task.component';
 import { MinusOffPipe } from './minus-off.pipe';
 import { MessageComponent } from './main-window/messages/message/message.component';
+import { ShortenPipe } from './shorten.pipe';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MessageComponent } from './main-window/messages/message/message.compone
     ActivityComponent,
     SingleTaskComponent,
     MinusOffPipe,
-    MessageComponent
+    MessageComponent,
+    ShortenPipe
   ],
   imports: [
     BrowserModule,

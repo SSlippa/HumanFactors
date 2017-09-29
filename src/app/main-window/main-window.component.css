@@ -4,9 +4,13 @@
   /*margin: auto;*/
   /*width: 80%;*/
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #edeef0;
   transition: margin 0.4s ease-in-out;
 
+}
+
+h2 {
+  padding-left: 25px;
 }
 
 .first-line {
@@ -25,7 +29,8 @@
   margin-bottom: 10px;
   border-radius: 5px;
   flex-grow: 1;
-  background-color: firebrick;
+  background-color: white;
+  border: 1px solid #edeef0;
   height: 250px;
 }
 

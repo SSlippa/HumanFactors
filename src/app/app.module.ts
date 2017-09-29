@@ -13,7 +13,10 @@ import { ReportComponent } from './main-window/report/report.component';
 import { TasksComponent } from './main-window/tasks/tasks.component';
 import { MessagesComponent } from './main-window/messages/messages.component';
 import { ActivityComponent } from './main-window/activity/activity.component';
-import {DataServiceService} from "./data-service.service";
+import {DataServiceService} from './data-service.service';
+import { SingleTaskComponent } from './main-window/tasks/single-task/single-task.component';
+import { MinusOffPipe } from './minus-off.pipe';
+import { MessageComponent } from './main-window/messages/message/message.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import {DataServiceService} from "./data-service.service";
     ReportComponent,
     TasksComponent,
     MessagesComponent,
-    ActivityComponent
+    ActivityComponent,
+    SingleTaskComponent,
+    MinusOffPipe,
+    MessageComponent
   ],
   imports: [
     BrowserModule,

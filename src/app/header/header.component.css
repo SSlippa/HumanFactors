@@ -4,7 +4,7 @@
   /*margin: auto;*/
   /*width: 100%;*/
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #edeef0;
   height: 60px;
   transition: margin 0.4s ease-in-out;
 }
@@ -41,8 +41,8 @@ input[type=text] {
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 96px;
-  height: 96px;
+  width: 90px;
+  height: 90px;
   font-size: 0;
   text-indent: -9999px;
   cursor: pointer;
@@ -56,9 +56,9 @@ input[type=text] {
   display: block;
   position: absolute;
   top: 44px;
-  left: 30px;
+  left: 40px;
   right: 30px;
-  height: 5px;
+  height: 3px;
   background: #1a2580;
 }
 
@@ -68,15 +68,15 @@ input[type=text] {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 5px;
+  height: 3px;
   background-color: #1a2580;
   content: "";
 }
 
 .hamburger span::before {
-  top: -10px;
+  top: -7px;
 }
 
 .hamburger span::after {
-  bottom: -10px;
+  bottom: -7px;
 }

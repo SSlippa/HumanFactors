@@ -1,3 +1,9 @@
-div {
+.first-line {
+  display: flex;
+  justify-content: space-between;
+}
 
+.dropList {
+  position: relative;
+  top: 15px;
 }

@@ -34,3 +34,13 @@ a {
 .grey {
   color: #c8c8d0;
 }
+
+.dots:hover i {
+  color: #122043;
+}
+
+.dots {
+  align-self: center;
+  float: right;
+  margin-top: 10px;
+}

@@ -1,6 +1,6 @@
 <a
   style="cursor: pointer"
-  class="list-group-item clearfix">
+  class="list-group-item clearfix row">
   <div style="display: inline-flex">
     <div class="head">
         <h4 class="list-group-item-heading"  >{{ task.logo }}</h4>
@@ -16,5 +16,8 @@
           <p class="list-group-item-text" [ngClass]="days < 0 ? 'red' : 'grey'" ><i style="margin-right: 5px" class="fa fa-clock-o" aria-hidden="true"></i>{{ days | minusOff }} days {{ daysLeftORDelays }}</p>
         </footer>
     </div>
+  </div>
+  <div class="dots">
+    <a href="#"><i class="fa fa-2x fa-ellipsis-v grey" aria-hidden="true"></i></a>
   </div>
 </a>

@@ -38,11 +38,9 @@ i {
 
 :host{
   /*height: 100%;*/
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
   background: #0e1935;
   color: #fff;
-  position: absolute;
+  position: fixed;
   float: left;
   left: 0;
   top: 0;

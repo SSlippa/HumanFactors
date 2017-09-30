@@ -1,4 +1,11 @@
 <div>
   <h4>Activity</h4>
   <hr>
+  <div class="row">
+    <div>
+      <app-single-activity
+        [activity]="activityEL"
+        *ngFor="let activityEL of activities; let i = index"></app-single-activity>
+    </div>
+  </div>
 </div>

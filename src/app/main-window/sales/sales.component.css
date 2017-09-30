@@ -7,3 +7,7 @@
   position: relative;
   top: 15px;
 }
+
+.btn-default {
+  border-radius: 15px;
+}

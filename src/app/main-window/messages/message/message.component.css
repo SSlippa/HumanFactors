@@ -1,0 +1,58 @@
+.update {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.config {
+  display: inline-flex;
+  text-align: right;
+  font-size: 12px;
+  width: 19%;
+  justify-content: space-between;
+}
+
+.head {
+  background-color: #5180ff;
+  padding: 10px;
+  border-radius: 40px;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.NameTimeLine {
+  display: inline-flex;
+  margin-bottom: -12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
+}
+
+p, i {
+  margin-right: 5px;
+}
+
+i {
+  color: #8a95a7;
+}
+
+.action {
+  margin-right: 20px;
+}
+
+.action:hover i {
+  color: #122043;
+}
+
+a {
+  height: 65px;
+}
+
+.grey {
+  color: #c8c8d0;
+}

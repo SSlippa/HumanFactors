@@ -1,0 +1,29 @@
+.update {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.head {
+  background-color: #5180ff;
+  padding: 10px;
+  border-radius: 40px;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+h4 {
+  text-align: center;
+}
+
+a {
+  height: 65px;
+}
+
+.red {
+  color: red;
+}
+
+.grey {
+  color: #c8c8d0;
+}

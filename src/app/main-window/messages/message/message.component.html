@@ -1,0 +1,27 @@
+<a
+  style="cursor: pointer"
+  class="list-group-item clearfix">
+  <div style="display: inline-flex">
+    <div>
+        <div class="head">
+          <h4 class="list-group-item-heading"  >{{ message.logo }}</h4>
+        </div>
+    </div>
+    <div>
+      <div style="margin-top: -5px;">
+        <div class="NameTimeLine">
+          <p class="list-group-item-text bold" >{{ message.name }}</p>
+          <p class="update grey"><i class="fa fa-clock-o" aria-hidden="true"></i>{{ days | minusOff }} {{addToNumberMessage}}</p>
+        </div>
+        <p class="list-group-item-text ">{{ message.content | shorten }}</p>
+
+      </div>
+      <footer class="config">
+        <a class="action"><i class="fa fa-reply" aria-hidden="true"></i></a>
+        <a class="action"><i class="fa fa-cog" aria-hidden="true"></i></a>
+        <!--<p class="list-group-item-text" ><i style="margin-right: 5px" class="fa fa-clock-o" aria-hidden="true"></i>{{ task.lastUpdate | date }}</p>-->
+        <!--<p class="list-group-item-text" ><i style="margin-right: 5px" class="fa fa-clock-o" aria-hidden="true"></i>{{ nowDate | date}}</p>-->
+      </footer>
+    </div>
+  </div>
+</a>

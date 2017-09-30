@@ -1,0 +1,21 @@
+<a
+  style="cursor: pointer"
+  class="list-group-item clearfix">
+  <div style="display: inline-flex">
+    <div class="head">
+      <h4 class="list-group-item-heading"  >{{ activity.logo }}</h4>
+    </div>
+    <div>
+      <div class="NameLine">
+        <p class="list-group-item-text bold " >{{ activity.name }}</p>
+        <p class="list-group-item-text grey" >{{ activity.action }}</p>
+        <p class="list-group-item-text bold"  >{{ activity.content }}</p>
+      </div>
+      <footer class=" update">
+        <!--<p class="list-group-item-text" ><i style="margin-right: 5px" class="fa fa-clock-o" aria-hidden="true"></i>{{ task.lastUpdate | date }}</p>-->
+        <!--<p class="list-group-item-text" ><i style="margin-right: 5px" class="fa fa-clock-o" aria-hidden="true"></i>{{ nowDate | date}}</p>-->
+        <p><i class="fa fa-clock-o" aria-hidden="true"></i>{{ days | minusOff }} {{addToNumberMessage}}</p>
+      </footer>
+    </div>
+  </div>
+</a>

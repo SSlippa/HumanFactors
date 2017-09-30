@@ -1,15 +1,16 @@
 <div>
-  <div class="row" style="margin-bottom: -10px">
+  <div class="row" style="margin-bottom: 12px">
     <div class="title"><h4>Activity</h4></div>
     <div class="messCount">
       <div class="blue">10</div>
     </div>
   </div>
-  <hr>
+  <!--<hr>-->
   <div class="row">
     <div>
       <app-single-activity
         [activity]="activityEL"
+        [index]="i"
         *ngFor="let activityEL of activities; let i = index"></app-single-activity>
     </div>
   </div>

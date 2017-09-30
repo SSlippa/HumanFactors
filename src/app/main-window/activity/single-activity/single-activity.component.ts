@@ -10,6 +10,7 @@ import * as moment from 'moment';
 })
 export class SingleActivityComponent implements OnInit {
   @Input() activity: Activity;
+  @Input() index;
   nowDate;
   taskDate;
   days;

@@ -14,11 +14,15 @@
 
 h4 {
   text-align: center;
+  color: white !important;
 }
 
 a {
   height: 69px;
   margin-bottom: -1px !important;
+  border-radius: 0px !important;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 

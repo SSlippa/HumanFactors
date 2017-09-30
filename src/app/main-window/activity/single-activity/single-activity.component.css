@@ -9,6 +9,7 @@
 
 h4 {
   text-align: center;
+  color: white !important;
 }
 
 .update {
@@ -29,10 +30,18 @@ a {
   height: 69px;
   border: none;
   margin-bottom: -1px !important;
+  margin-bottom: -1px !important;
+  border-radius: 0px !important;
+  border-left: 0px;
+  border-right: 0px;
 }
 
 .grey {
   color: #c8c8d0;
+}
+
+.border {
+  border-top: 1px solid #ddd;
 }
 
 p, i {

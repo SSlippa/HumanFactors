@@ -14,7 +14,7 @@ export class ActivityComponent implements OnInit {
 
   ngOnInit() {
     this.activities = this.service.getActivities();
-    this.service.tasksChanged.subscribe(
+    this.service.activityChanged.subscribe(
       (activities: Activity[]) => {
         this.activities = activities;
       }

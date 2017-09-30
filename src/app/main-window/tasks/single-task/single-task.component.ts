@@ -14,7 +14,10 @@ export class SingleTaskComponent implements OnInit {
   taskDate;
   days;
   daysLeftORDelays;
-  constructor(private service: DataServiceService) { }
+  redMess: number;
+  constructor(private service: DataServiceService) {
+    // this.service.redMessageChanged.next(this.redMess);
+  }
 
   ngOnInit() {
     this.nowDate = Date.now();
@@ -25,6 +28,8 @@ export class SingleTaskComponent implements OnInit {
     this.days = Math.trunc(duration.asDays());
     if ( this.days < 0) {
       this.daysLeftORDelays = 'delays';
+      this.redMess = this.redMess + 1;
+
     } else {
       this.daysLeftORDelays = 'left';
     }

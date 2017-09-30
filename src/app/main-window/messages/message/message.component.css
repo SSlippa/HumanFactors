@@ -49,10 +49,13 @@ i {
   color: #122043;
 }
 
-a {
-  height: 65px;
+.font {
+  font-family: serif !important;
 }
 
-.grey {
-  color: #c8c8d0;
+a {
+  height: 69px;
+  margin-bottom: -1px !important;
 }
+
+

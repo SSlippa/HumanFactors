@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {EventEmitter, Injectable, Input} from '@angular/core';
 import {Subject} from 'rxjs/Subject';
 import { Task} from './main-window/tasks/task.model';
 import {Message} from './main-window/messages/message.model';
@@ -10,7 +10,8 @@ export class DataServiceService {
   tasksChanged = new Subject<Task[]>();
   messagesChanged = new Subject<Message[]>();
   activityChanged = new Subject<Activity[]>();
-  redMessage;
+  redMessageChanged = new Subject<number>();
+  redMess =  2;
   public tasks: Task[] = [
     new Task('N', 'New Website for Symu.com', new Date(2017, 8, 27)),
     new Task('F', 'Free Business PSD Template', new Date(2017, 8, 25)),
@@ -32,7 +33,18 @@ export class DataServiceService {
     new Activity('F', 'Nina Jones', 'added a new project', 'Free PSD', new Date(2017, 8, 24))
   ];
 
-  constructor() {}
+  constructor() {
+    this.redMessageChanged.subscribe(
+      (num: number) => {
+        this.redMess = this.redMess + num;
+      }
+    );
+  }
+
+  addTask(task: Task) {
+    this.tasks.push(task);
+    this.tasksChanged.next(this.tasks.slice());
+  }
 
   getTasks() {
     return this.tasks.slice();
@@ -45,7 +57,8 @@ export class DataServiceService {
   }
 
   getRedMessages() {
-    return this.redMessage;
+    console.log(this.redMess);
+    return this.redMess;
   }
 
 }

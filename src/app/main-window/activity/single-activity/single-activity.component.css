@@ -7,6 +7,10 @@
   margin-right: 10px;
 }
 
+h4 {
+  text-align: center;
+}
+
 .update {
   font-style: italic;
   font-size: 12px;
@@ -22,8 +26,9 @@
 }
 
 a {
-  height: 65px;
+  height: 69px;
   border: none;
+  margin-bottom: -1px !important;
 }
 
 .grey {

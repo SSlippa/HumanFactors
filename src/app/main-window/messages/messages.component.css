@@ -1,0 +1,26 @@
+h4 {
+  font-weight: bold;
+}
+
+.title {
+  float: left;
+  margin-left: 10px;
+}
+
+.messCount {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 25px;
+  float: right;
+  text-align: center;
+  color: white;
+}
+
+.blue {
+  background-color: #5180ff;
+  padding: 8px;
+  border-radius: 40px;
+  height: 35px;
+  width: 35px;
+  margin-right: 10px;
+}

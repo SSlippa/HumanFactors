@@ -10,9 +10,11 @@ import {DataServiceService} from '../../data-service.service';
 export class TasksComponent implements OnInit {
   tasks: Task[];
   redMessage;
-  constructor(private service: DataServiceService) { }
+  constructor(private service: DataServiceService) {
+  }
 
   ngOnInit() {
+    this.redMessage = this.service.getRedMessages();
     this.tasks = this.service.getTasks();
     this.service.tasksChanged.subscribe(
       (tasks: Task[]) => {

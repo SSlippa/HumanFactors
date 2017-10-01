@@ -21,16 +21,16 @@ export class DataServiceService {
 
   public messages: Message[] = [
     new Message('N', 'Nina Jones', 'Hey You! It`s me again :-) I attached new !!!', new Date()),
-    new Message('F', 'Nina Jones', 'Hey!   I attached some new PSD files for !!!', new Date(2017, 8, 29)),
-    new Message('N', 'James Smith', 'Good morning, you are fired', new Date(2017, 8, 28)),
-    new Message('F', 'Nina Jones', 'Hello! Could You bring me coffee please', new Date(2017, 8, 27))
+    new Message('N', 'Nina Jones', 'Hey!   I attached some new PSD files for !!!', new Date(2017, 8, 29)),
+    new Message('J', 'James Smith', 'Good morning, you are fired', new Date(2017, 8, 28)),
+    new Message('N', 'Nina Jones', 'Hello! Could You bring me coffee please', new Date(2017, 8, 27))
   ];
 
   public activities: Activity[] = [
     new Activity('N', 'Nina Jones', 'added a new project', 'Free UI kit', new Date()),
-    new Activity('F', 'Nina Jones', 'commented project', 'Free PSD ', new Date(2017, 8, 29)),
-    new Activity('N', 'James Smith', 'completed task',  'Symu Website', new Date(2017, 8, 28)),
-    new Activity('F', 'Nina Jones', 'added a new project', 'Free PSD', new Date(2017, 8, 24))
+    new Activity('N', 'Nina Jones', 'commented project', 'Free PSD ', new Date(2017, 8, 29)),
+    new Activity('J', 'James Smith', 'completed task',  'Symu Website', new Date(2017, 8, 28)),
+    new Activity('N', 'Nina Jones', 'added a new project', 'Free PSD', new Date(2017, 8, 24))
   ];
 
   constructor() {

@@ -57,7 +57,6 @@ export class DataServiceService {
   }
 
   getRedMessages() {
-    console.log(this.redMess);
     return this.redMess;
   }
 

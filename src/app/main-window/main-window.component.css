@@ -1,8 +1,5 @@
 .main {
   background-color: #f6f7fb;
-  /*display: flex;*/
-  /*margin: auto;*/
-  /*width: 80%;*/
   align-items: center;
   border: 1px solid #edeef0;
   transition: margin 0.4s ease-in-out;
@@ -17,7 +14,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  /*height: 300px;*/
   background-color: #f6f7fb;
   justify-content: space-around;
   margin-bottom: 25px;
@@ -48,7 +44,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  /*height: 300px;*/
   background-color: #f6f7fb;
   justify-content: space-around;
   padding-right: 25px;

@@ -30,7 +30,5 @@ export class AppComponent {
      );
    }
 
-  // toggleMenu() {
-  //   this.menuState = this.menuState === 'out' ? 'in' : 'out';
-  // }
+
 }

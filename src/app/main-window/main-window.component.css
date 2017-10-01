@@ -32,12 +32,12 @@ h2 {
 }
 
 .element1 {
-  min-width: 300px;
+  /*min-width: 300px;*/
 }
 
 .element2 {
-  min-width: 480px;
-  flex-grow: 2;
+  /*min-width: 480px;*/
+  flex-grow: 3;
 }
 
 .second-line {

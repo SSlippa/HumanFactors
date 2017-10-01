@@ -3,7 +3,6 @@ h4 {
 }
 
 .title {
-  float: left;
   margin-left: 10px;
 }
 
@@ -11,9 +10,10 @@ h4 {
   display: flex;
   justify-content: flex-end;
   margin-right: 25px;
-  float: right;
   text-align: center;
   color: white;
+  margin-left: auto;
+
 }
 
 .blue {

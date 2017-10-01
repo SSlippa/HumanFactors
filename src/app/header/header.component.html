@@ -1,14 +1,15 @@
-<div class="site-header" [ngStyle]="{'margin-left': size}">
-  <button (click)="toggleMenu()" class="hamburger" style="float: right" >
+<div class="site-header">
+  <div class="el1"><button type="button" class="hamburger" (click)="toggleMenu()" [ngStyle]="{'margin-left': size}">
     <span>toggle menu</span>
   </button>
-    <span style="color: black; margin-right: 5px" class="glyphicon glyphicon-search"></span><div style="width: 80%"><input  type="text" name="search" placeholder="Search.."></div>
-        <button style="border-radius: 30px; border: none" type="button" class="btn btn-primary ">+  Add project</button>
-        <a href="#" ><span class="glyphicon glyphicon-envelope "></span></a>
-        <a href="#" ><span class="glyphicon glyphicon-bell "><span class="badge badge-notify">3</span></span></a>
-        <a href="#" ><span class="profile-image img-circle "></span>
-          <div>
-            <img src="http://placehold.it/30x30" class="profile-image img-circle"><b class="caret"></b>
-          </div>
-        </a>
+  </div>
+  <span style="color: black; margin-right: 5px" class="glyphicon glyphicon-search"></span><div style="width: 80%"><input  type="text" name="search" placeholder="Search.."></div>
+  <button style="border-radius: 30px; border: none" type="button" class="btn btn-primary ">+  Add project</button>
+  <a href="#" ><span class="glyphicon glyphicon-envelope "></span></a>
+  <a href="#" ><span class="glyphicon glyphicon-bell "><span class="badge badge-notify">3</span></span></a>
+  <a href="#" ><span class="profile-image img-circle "></span>
+  <div>
+  <img src="http://placehold.it/30x30" class="profile-image img-circle"><b class="caret"></b>
+  </div>
+  </a>
 </div>

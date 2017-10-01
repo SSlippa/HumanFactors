@@ -8,11 +8,8 @@
     <div>
         <div class="">
           <p class="list-group-item-text" style="font-weight: bold; padding-bottom: 5px;  " >{{ task.content }}</p>
-
         </div>
         <footer class=" update">
-          <!--<p class="list-group-item-text" ><i style="margin-right: 5px" class="fa fa-clock-o" aria-hidden="true"></i>{{ task.lastUpdate | date }}</p>-->
-          <!--<p class="list-group-item-text" ><i style="margin-right: 5px" class="fa fa-clock-o" aria-hidden="true"></i>{{ nowDate | date}}</p>-->
           <p class="list-group-item-text" [ngClass]="days < 0 ? 'red' : 'grey'" ><i style="margin-right: 5px" class="fa fa-clock-o" aria-hidden="true"></i>{{ days | minusOff }} days {{ daysLeftORDelays }}</p>
         </footer>
     </div>

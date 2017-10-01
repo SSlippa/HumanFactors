@@ -20,7 +20,6 @@ export class SingleActivityComponent implements OnInit {
   ngOnInit() {
     this.nowDate = Date.now();
     this.taskDate = this.activity.lastUpdate;
-    // this.diff = this.taskDate - this.nowDate;
     let now = moment(Date.now() ); // todays date
     let task = moment(this.taskDate); // task date
     let duration = moment.duration(task.diff(now));
